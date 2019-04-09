@@ -12,12 +12,10 @@
  * __wt_get_vm_pagesize --
  *	Return the default page size of a virtual memory page.
  */
-int
-__wt_get_vm_pagesize(void)
-{
-	SYSTEM_INFO system_info;
+int __wt_get_vm_pagesize(void) {
+    SYSTEM_INFO system_info;
 
-	GetSystemInfo(&system_info);
+    GetSystemInfo(&system_info);
 
-	return (system_info.dwPageSize);
+    return (system_info.dwPageSize);
 }

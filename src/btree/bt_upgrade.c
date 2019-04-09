@@ -12,12 +12,10 @@
  * __wt_upgrade --
  *	Upgrade a file.
  */
-int
-__wt_upgrade(WT_SESSION_IMPL *session, const char *cfg[])
-{
-	WT_UNUSED(cfg);
+int __wt_upgrade(WT_SESSION_IMPL* session, const char* cfg[]) {
+    WT_UNUSED(cfg);
 
-	/* There's nothing to upgrade, yet. */
-	WT_RET(__wt_progress(session, NULL, 1));
-	return (0);
+    /* There's nothing to upgrade, yet. */
+    WT_RET(__wt_progress(session, NULL, 1));
+    return (0);
 }

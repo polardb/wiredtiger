@@ -12,18 +12,14 @@
  * __wt_absolute_path --
  *	Return if a filename is an absolute path.
  */
-bool
-__wt_absolute_path(const char *path)
-{
-	return (path[0] == '/');
+bool __wt_absolute_path(const char* path) {
+    return (path[0] == '/');
 }
 
 /*
  * __wt_path_separator --
  *	Return the path separator string.
  */
-const char *
-__wt_path_separator(void)
-{
-	return ("/");
+const char* __wt_path_separator(void) {
+    return ("/");
 }

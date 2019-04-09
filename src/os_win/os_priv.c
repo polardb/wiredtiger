@@ -13,8 +13,6 @@
  *	Return if the process has special privileges, defined as having
  *	different effective and read UIDs or GIDs.
  */
-bool
-__wt_has_priv(void)
-{
-	return (0);
+bool __wt_has_priv(void) {
+    return (0);
 }
